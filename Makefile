@@ -6,7 +6,7 @@
 #    By: cdapurif <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/10/11 16:32:03 by cdapurif          #+#    #+#              #
-#    Updated: 2021/05/05 22:52:59 by cdapurif         ###   ########.fr        #
+#    Updated: 2021/08/12 18:42:19 by cdapurif         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -75,6 +75,7 @@ RM		=	rm -f
 all:		${NAME}
 
 ${OBJS} :	${SRCS}
+			@cat ascii_lib.txt
 			@${CC} ${CFLAGS} -c ${SRCS}
 
 ${B_OBJS} : ${B_SRCS}
